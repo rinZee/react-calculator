@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rinZee/react-calculator.git/static/css/main.bfec435a.chunk.css",
+    "main.js": "/rinZee/react-calculator.git/static/js/main.0ae0fee8.chunk.js",
+    "main.js.map": "/rinZee/react-calculator.git/static/js/main.0ae0fee8.chunk.js.map",
+    "runtime-main.js": "/rinZee/react-calculator.git/static/js/runtime-main.e16f2fb6.js",
+    "runtime-main.js.map": "/rinZee/react-calculator.git/static/js/runtime-main.e16f2fb6.js.map",
+    "static/js/2.b74f5a1e.chunk.js": "/rinZee/react-calculator.git/static/js/2.b74f5a1e.chunk.js",
+    "static/js/2.b74f5a1e.chunk.js.map": "/rinZee/react-calculator.git/static/js/2.b74f5a1e.chunk.js.map",
+    "index.html": "/rinZee/react-calculator.git/index.html",
+    "precache-manifest.e0e2f7e3dbecf103e8032887861c2aa0.js": "/rinZee/react-calculator.git/precache-manifest.e0e2f7e3dbecf103e8032887861c2aa0.js",
+    "service-worker.js": "/rinZee/react-calculator.git/service-worker.js",
+    "static/css/main.bfec435a.chunk.css.map": "/rinZee/react-calculator.git/static/css/main.bfec435a.chunk.css.map",
+    "static/js/2.b74f5a1e.chunk.js.LICENSE.txt": "/rinZee/react-calculator.git/static/js/2.b74f5a1e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e16f2fb6.js",
+    "static/js/2.b74f5a1e.chunk.js",
+    "static/css/main.bfec435a.chunk.css",
+    "static/js/main.0ae0fee8.chunk.js"
+  ]
+}
