@@ -4,16 +4,16 @@ import {useState} from 'react';
 
 
 const App = () => {
-    
+  
+
   const [input, setInput] = useState('0')
-  const [prevNumber, setPrevNumber] = useState('')
-  const [currentNumber, setCurrentNumber] = useState('')
-  const [operator, setOperator] = useState('')
 
   const pressNum = (e) => {
-    if(input === '0') {
+    
+     if(input === '0') {
       setInput(e.target.value)
-    } else {
+      } 
+      else {
    setInput(input + e.target.value)
     }
   }
@@ -25,23 +25,32 @@ const App = () => {
   }
   
   const pressDecimal = (e) => {
-if(input.indexOf('.') === -1) {
-  setInput(input + e.target.value)
-}
+//  if input is '5+5-5'
+  let arr = input.split(/[-+*/]+/);
+  if(arr[arr.length-1].indexOf('.') === -1) {
+    setInput(input + e.target.value)
   }
-
+}
 const clearInput = () => {
   setInput('0')
-}
+  
 
-const add = (e) => {
+  }
+const pressOperator = (e) => {
+  setInput(input + e.target.value)
 
-}
+  }
+
+  const evaluate = () => {
+    setInput((Math.round(1000000000000 * eval(input)) / 1000000000000).toString())
+  }
 
   return (
-    <div id="calculator" className="calculator">
+    <div id="calculator">
                 
     <div id="display" className="display">{input}</div>
+
+    
     <div className="nums-container">
     <button id="clear" className="light-grey big-w" onClick={clearInput}>AC</button>
 
@@ -59,11 +68,11 @@ const add = (e) => {
 
     </div>
     <div className="ops-container">
-    <button id="add" value='+'>+</button>
-    <button id="subtract" value='-'>-</button>
-    <button id="multiply" value='*'>*</button>
-    <button id="divide" value='/'>/</button>
-    <button id="equals">=</button>
+    <button id="add" value='+' onClick={pressOperator}>+</button>
+    <button id="subtract" value='-' onClick={pressOperator}>-</button>
+    <button id="multiply" value='*' onClick={pressOperator}>*</button>
+    <button id="divide" value='/' onClick={pressOperator}>/</button>
+    <button id="equals" onClick={evaluate}>=</button>
     </div>
   </div>  
   )
