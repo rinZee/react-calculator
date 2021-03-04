@@ -4,11 +4,8 @@ import {useState} from 'react';
 
 
 const App = () => {
-  
-
   const [input, setInput] = useState('0')
-
-  const pressNum = (e) => {
+const pressNum = (e) => {
     
      if(input === '0') {
       setInput(e.target.value)
@@ -33,8 +30,6 @@ const App = () => {
 }
 const clearInput = () => {
   setInput('0')
-  
-
   }
 const pressOperator = (e) => {
   setInput(input + e.target.value)
